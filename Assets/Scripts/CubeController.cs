@@ -15,12 +15,13 @@ public class CubeController : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
-        {
+        {        
             // Add to score when the player hits a cube
             GameController.score++;
             // Destroy the cube
             Destroy(gameObject);
         }
+
     }
 
     // Update is called once per frame
